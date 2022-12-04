@@ -40,7 +40,7 @@ class Person
     public function __sleep()
     {
         echo 'Начинаем конвертировать объект в строку' . PHP_EOL;
-        return ['login'];
+        return ['name', 'login', 'password'];
     }
 
     public function __wakeup()
